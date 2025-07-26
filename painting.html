@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Painting Services - Satguru Services</title>
+  <link rel="icon" href="images/New Logo.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body {
+      background-color: #f9f9f9;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .service-box {
+      background: #fff;
+      padding: 25px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.04);
+    }
+    .service-title {
+      font-weight: 600;
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: #0d6efd;
+    }
+    .service-description {
+      margin: 0;
+      color: #333;
+    }
+    .book-btn {
+      text-align: center;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container py-5">
+  <h2 class="text-center text-primary mb-5">Painting Services</h2>
+
+  <div class="service-box">
+    <p class="service-title">1. Interior Wall Painting</p>
+    <p class="service-description">Smooth and professional painting of bedroom, hall, kitchen, or full house with quality emulsion paint.</p>
+  </div>
+
+  <div class="service-box">
+    <p class="service-title">2. Exterior Wall Painting</p>
+    <p class="service-description">Weather-resistant paint application on outer walls to protect against rain, sun, and pollution.</p>
+  </div>
+
+  <div class="service-box">
+    <p class="service-title">3. Ceiling & Roof Painting</p>
+    <p class="service-description">Painting of false ceilings, roofs, or top floors with heat-proof, waterproof, or white finish coatings.</p>
+  </div>
+
+  <div class="service-box">
+    <p class="service-title">4. Wooden Surface Painting</p>
+    <p class="service-description">Polishing and painting of doors, windows, furniture, and cupboards for a new look and protection.</p>
+  </div>
+
+  <div class="service-box">
+    <p class="service-title">5. Metal Surface Painting</p>
+    <p class="service-description">Anti-rust and enamel paint service for metal gates, grills, pipes, tanks, and railing.</p>
+  </div>
+
+  <div class="service-box">
+    <p class="service-title">6. Putty & Primer Coating</p>
+    <p class="service-description">Base layer application before painting to smoothen surface and increase paint durability.</p>
+  </div>
+
+  <div class="service-box">
+    <p class="service-title">7. Texture & Design Painting</p>
+    <p class="service-description">Special textured designs, patterns, and stencils on accent walls for a stylish interior.</p>
+  </div>
+
+  <div class="service-box">
+    <p class="service-title">8. Dampness & Crack Repair</p>
+    <p class="service-description">Surface waterproofing and repair of cracks, flakes, and bubbles before painting.</p>
+  </div>
+
+  <!-- Book Now Button -->
+  <div class="book-btn">
+    <a href="home.html#contact" class="btn btn-primary btn-lg px-4">Book Now</a>
+  </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+// Auto-select "Painting" as the service on page load
+document.addEventListener("DOMContentLoaded", function () {
+  const serviceSelect = document.getElementById("service");
+  if (serviceSelect) {
+    serviceSelect.value = "Painting";
+  }
+});
+</script>
+
+</body>
+</html>

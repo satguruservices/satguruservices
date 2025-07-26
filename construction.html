@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Home Construction Services - Satguru Services</title>
+  <link rel="icon" href="images/New Logo.png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    body {
+      background-color: #f8f9fa;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .service-box {
+      background: #fff;
+      padding: 25px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    .service-title {
+      font-weight: 600;
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: #0d6efd;
+    }
+    .service-description {
+      margin: 0;
+      color: #333;
+    }
+    .book-btn {
+      text-align: center;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container py-5">
+  <h2 class="text-center text-primary mb-5">Home Construction Services</h2>
+
+  <div class="service-box">
+    <p class="service-title">1. Complete House Construction</p>
+    <p class="service-description">From foundation to finishing – we manage end-to-end construction with quality materials and skilled labor.</p>
+  </div>
+
+  <div class="service-box">
+    <p class="service-title">2. Architecture & Structural Design</p>
+    <p class="service-description">Custom house designs, layouts, 3D views, and vastu-compliant blueprints from expert architects.</p>
+  </div>
+
+  <div class="service-box">
+    <p class="service-title">3. Civil Works & RCC Framework</p>
+    <p class="service-description">Strong base and superstructure including RCC, column work, slab casting, and brickwork.</p>
+  </div>
+
+  <div class="service-box">
+    <p class="service-title">4. Interior & Exterior Finishing</p>
+    <p class="service-description">Wall plastering, flooring, false ceiling, painting, waterproofing, grills, and boundary walls.</p>
+  </div>
+
+  <div class="service-box">
+    <p class="service-title">5. Plumbing, Electrical & Tiles</p>
+    <p class="service-description">Complete plumbing, wiring, switches, bathroom/kitchen fittings, and modern tile layouts.</p>
+  </div>
+
+  <div class="service-box">
+    <p class="service-title">6. Modular Kitchen & Woodwork</p>
+    <p class="service-description">Design and installation of modern modular kitchens, wardrobes, and cupboards.</p>
+  </div>
+
+  <div class="service-box">
+    <p class="service-title">7. Renovation & Remodeling</p>
+    <p class="service-description">Transform your old house into a modern home with structural upgrades and design improvements.</p>
+  </div>
+
+  <!-- Book Now Button -->
+  <div class="book-btn">
+    <a href="home.html#contact" class="btn btn-primary btn-lg px-4">Book Now</a>
+  </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+// Auto-select "Home Construction" in form if available
+document.addEventListener("DOMContentLoaded", function () {
+  const serviceSelect = document.getElementById("service");
+  if (serviceSelect) {
+    serviceSelect.value = "Home Construction";
+  }
+});
+</script>
+
+</body>
+</html>

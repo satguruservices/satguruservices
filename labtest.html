@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lab Test Collection - Satguru Services</title>
+  <link rel="icon" href="images/New Logo.png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    body {
+      background-color: #f9fcff;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .service-box {
+      background: #ffffff;
+      padding: 25px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.05);
+    }
+    .service-title {
+      font-weight: 600;
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: #0077b6;
+    }
+    .service-description {
+      margin: 0;
+      color: #333;
+    }
+    .book-btn {
+      text-align: center;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container py-5">
+  <h2 class="text-center text-primary mb-5">Lab Home Test Collection</h2>
+
+  <div class="service-box">
+    <p class="service-title">1. Convenient Sample Collection at Your Doorstep</p>
+    <p class="service-description">We provide professional lab test sample collection from the comfort of your home. Just book a slot, and our certified technician will visit you.</p>
+  </div>
+
+  <div class="service-box">
+    <p class="service-title">2. Trusted Lab Collaborations</p>
+    <p class="service-description">We are partnered with top diagnostic labs like <strong>XXX Diagnostic Centre</strong> and <strong>XXX Diagnostics center</strong> to ensure accurate and reliable reports.</p>
+  </div>
+
+  <div class="service-box">
+    <p class="service-title">3. Wide Range of Tests</p>
+    <p class="service-description">We offer tests including blood tests, sugar/diabetes checks, thyroid, lipid profile, liver & kidney function tests, CBC, and more.</p>
+  </div>
+
+  <div class="service-box">
+    <p class="service-title">4. Same Day Report Delivery</p>
+    <p class="service-description">Most test reports are delivered via email or WhatsApp within 24 hours, directly from the lab.</p>
+  </div>
+
+  <div class="service-box">
+    <p class="service-title">5. Safe, Hygienic & Certified Staff</p>
+    <p class="service-description">All technicians wear gloves, masks, and follow strict hygiene protocols. Certified and trained to handle all types of test kits.</p>
+  </div>
+
+  <div class="service-box">
+    <p class="service-title">6. No Extra Visit Charges</p>
+    <p class="service-description">Enjoy free home collection with zero hidden charges. Pay only for the test as per the lab rate card.</p>
+  </div>
+
+  <!-- Book Now Button -->
+  <div class="book-btn">
+    <a href="home.html#contact" class="btn btn-primary btn-lg px-4">Book Lab Test Now</a>
+  </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+// Auto-select service if form has dropdown
+document.addEventListener("DOMContentLoaded", function () {
+  const serviceSelect = document.getElementById("service");
+  if (serviceSelect) {
+    serviceSelect.value = "Lab Test Collection";
+  }
+});
+</script>
+
+</body>
+</html>

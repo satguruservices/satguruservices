@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>AC Services - Satguru Services</title>
+  <link rel="icon" href="images/New Logo.png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    body {
+      background-color: #f8f9fa;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .service-box {
+      background: #fff;
+      padding: 25px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    .service-title {
+      font-weight: 600;
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: #0d6efd;
+    }
+    .service-description {
+      margin: 0;
+      color: #333;
+    }
+    .book-btn {
+      text-align: center;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container py-5">
+  <h2 class="text-center text-primary mb-5">Air Conditioner (AC) Services</h2>
+
+  <div class="service-box">
+    <p class="service-title">1. AC Installation</p>
+    <p class="service-description">Professional installation of split, window, and inverter AC units with proper gas line fitting.</p>
+  </div>
+
+  <div class="service-box">
+    <p class="service-title">2. AC Uninstallation</p>
+    <p class="service-description">Safe removal and uninstallation of ACs, including copper pipe and outdoor unit handling.</p>
+  </div>
+
+  <div class="service-box">
+    <p class="service-title">3. AC Servicing (Wet & Dry)</p>
+    <p class="service-description">Full wet/dry service with internal filter, coil, and condenser cleaning for enhanced cooling.</p>
+  </div>
+
+  <div class="service-box">
+    <p class="service-title">4. Gas Charging / Refilling</p>
+    <p class="service-description">Complete gas refilling for low-cooling issues using R22, R32, or R410A gases.</p>
+  </div>
+
+  <div class="service-box">
+    <p class="service-title">5. AC Repair</p>
+    <p class="service-description">Repairs for compressor failure, PCB board damage, fan motor issues, and other common faults.</p>
+  </div>
+
+  <div class="service-box">
+    <p class="service-title">6. AC PCB & Remote Replacement</p>
+    <p class="service-description">Genuine PCB board and remote replacement for all leading AC brands.</p>
+  </div>
+
+  <div class="service-box">
+    <p class="service-title">7. Water Leakage Fix</p>
+    <p class="service-description">Drip and drainage pipe issues resolved to avoid water leakage inside home.</p>
+  </div>
+
+  <div class="service-box">
+    <p class="service-title">8. Annual Maintenance (AMC)</p>
+    <p class="service-description">Yearly plan for regular checkups, servicing, and priority repair for residential & commercial units.</p>
+  </div>
+
+  <!-- Book Now Button -->
+  <div class="book-btn">
+    <a href="home.html#contact" class="btn btn-primary btn-lg px-4">Book Now</a>
+  </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+// Auto-select "AC" in the form if applicable
+document.addEventListener("DOMContentLoaded", function () {
+  const serviceSelect = document.getElementById("service");
+  if (serviceSelect) {
+    serviceSelect.value = "AC";
+  }
+});
+</script>
+
+</body>
+</html>

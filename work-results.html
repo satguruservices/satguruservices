@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Work Results - Satguru Services</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: #f8f9fa;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .compare-wrapper {
+      position: relative;
+      overflow: hidden;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    .compare-wrapper img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .compare-after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 50%;
+      overflow: hidden;
+      height: 100%;
+    }
+    .compare-after img {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .form-range {
+      margin-top: 10px;
+    }
+    .scroll-hint {
+      font-size: 1.2rem;
+      font-weight: 500;
+      margin-top: 10px;
+      text-align: center;
+      color: #555;
+      animation: bounce 2s infinite;
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-5px); }
+    }
+    .auto-type::after {
+  content: '|';
+  animation: blink 0.7s infinite;
+}
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+.compare-wrapper {
+  position: relative;
+}
+.compare-wrapper img {
+  display: block;
+  width: 100%;
+}
+.compare-after {
+  overflow: hidden;
+}
+.compare-wrapper {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.compare-wrapper img {
+  object-fit: cover;
+}
+
+  </style>
+</head>
+<body>
+
+  <div class="container py-5">
+  <h2 class="text-center mb-4 display-6">Work Results Showcase</h2>
+
+  <!-- Service Buttons -->
+  <div class="text-center mb-5">
+    <button class="btn btn-outline-primary m-2" onclick="showService('electrician')">Electrician</button>
+    <button class="btn btn-outline-primary m-2" onclick="showService('carpenter')">Carpenter</button>
+    <button class="btn btn-outline-primary m-2" onclick="showService('plumber')">Plumber</button>
+    <button class="btn btn-outline-primary m-2" onclick="showService('painting')">Painting</button>
+    <button class="btn btn-outline-primary m-2" onclick="showService('geyser')">Geyser Repair</button>
+    <button class="btn btn-outline-primary m-2" onclick="showService('purifier')">Water Purifier</button>
+    <button class="btn btn-outline-primary m-2" onclick="showService('washing')">Washing Machine</button>
+    <button class="btn btn-outline-primary m-2" onclick="showService('tiles')">Tiles Work</button>
+  </div>
+
+  <!-- Results Sections -->
+  <div id="results-container">
+
+    <div class="service-result electrician-section d-none container">
+  <h3 class="text-center mb-4">
+    <span class="auto-type text-success fw-bold" data-text="Electrician Work Results"></span>
+  </h3>
+
+  <div class="row g-4">
+    <!-- Work 1 -->
+    <div class="col-md-6">
+      <h5 class="text-center mb-2">Switch Board Repair</h5>
+      <div class="compare-wrapper position-relative overflow-hidden rounded shadow" style="height: 400px;">
+        <img src="images/a.jpg" class="img-fluid h-100 w-100 object-fit-cover" alt="Before Work 1">
+        <div class="compare-after position-absolute top-0 start-0 h-100" id="after1a" style="width: 50%;">
+          <img src="images/be.jpg" class="img-fluid h-100 w-100 object-fit-cover" alt="After Work 1">
+        </div>
+      </div>
+      <input type="range" class="form-range" min="0" max="100" value="50" id="slider1a">
+      <p class="text-center text-muted">⬅️ Slide to compare ➡️</p>
+    </div>
+
+    <!-- Work 2 -->
+    <div class="col-md-6">
+      <h5 class="text-center mb-2">Fan Installation</h5>
+      <div class="compare-wrapper position-relative overflow-hidden rounded shadow" style="height: 400px;">
+        <img src="images/a.jpg" class="img-fluid h-100 w-100 object-fit-cover" alt="Before Work 2">
+        <div class="compare-after position-absolute top-0 start-0 h-100" id="after1b" style="width: 50%;">
+          <img src="images/be.jpg" class="img-fluid h-100 w-100 object-fit-cover" alt="After Work 2">
+        </div>
+      </div>
+      <input type="range" class="form-range" min="0" max="100" value="50" id="slider1b">
+      <p class="text-center text-muted">⬅️ Slide to compare ➡️</p>
+    </div>
+
+    <!-- Work 3 -->
+    <div class="col-md-6">
+      <h5 class="text-center mb-2">Light Fitting</h5>
+      <div class="compare-wrapper position-relative overflow-hidden rounded shadow" style="height: 400px;">
+        <img src="images/a.jpg" class="img-fluid h-100 w-100 object-fit-cover" alt="Before Work 3">
+        <div class="compare-after position-absolute top-0 start-0 h-100" id="after1c" style="width: 50%;">
+          <img src="images/be.jpg" class="img-fluid h-100 w-100 object-fit-cover" alt="After Work 3">
+        </div>
+      </div>
+      <input type="range" class="form-range" min="0" max="100" value="50" id="slider1c">
+      <p class="text-center text-muted">⬅️ Slide to compare ➡️</p>
+    </div>
+
+    <!-- Work 4 -->
+    <div class="col-md-6">
+      <h5 class="text-center mb-2">Wiring Fix</h5>
+      <div class="compare-wrapper position-relative overflow-hidden rounded shadow" style="height: 400px;">
+        <img src="images/a.jpg" class="img-fluid h-100 w-100 object-fit-cover" alt="Before Work 4">
+        <div class="compare-after position-absolute top-0 start-0 h-100" id="after1d" style="width: 50%;">
+          <img src="images/be.jpg" class="img-fluid h-100 w-100 object-fit-cover" alt="After Work 4">
+        </div>
+      </div>
+      <input type="range" class="form-range" min="0" max="100" value="50" id="slider1d">
+      <p class="text-center text-muted">⬅️ Slide to compare ➡️</p>
+    </div>
+  </div>
+</div>
+    <!-- Carpenter -->
+    <!-- Carpenter Result (4 Works Side by Side) -->
+<div class="service-result carpenter-section d-none container">
+  <h3 class="text-center mb-4">
+    <span class="auto-type text-success fw-bold" data-text="Carpenter Work Results"></span>
+  </h3>
+
+  <div class="row g-4">
+    <!-- Work 1 -->
+    <div class="col-md-6">
+      <h5 class="text-center mb-2">Wardrobe Repair</h5>
+      <div class="compare-wrapper position-relative overflow-hidden rounded shadow" style="height: 400px;">
+        <img src="images/a.jpg" class="img-fluid h-100 w-100 object-fit-cover" alt="Before Work 1">
+        <div class="compare-after position-absolute top-0 start-0 h-100" id="after2a" style="width: 50%;">
+          <img src="images/be.jpg" class="img-fluid h-100 w-100 object-fit-cover" alt="After Work 1">
+        </div>
+      </div>
+      <input type="range" class="form-range" min="0" max="100" value="50" id="slider2a">
+      <p class="text-center text-muted">⬅️ Slide to compare ➡️</p>
+    </div>
+
+    <!-- Work 2 -->
+    <div class="col-md-6">
+      <h5 class="text-center mb-2">Door Adjustment</h5>
+      <div class="compare-wrapper position-relative overflow-hidden rounded shadow" style="height: 400px;">
+        <img src="images/a.jpg" class="img-fluid h-100 w-100 object-fit-cover" alt="Before Work 2">
+        <div class="compare-after position-absolute top-0 start-0 h-100" id="after2b" style="width: 50%;">
+          <img src="images/be.jpg" class="img-fluid h-100 w-100 object-fit-cover" alt="After Work 2">
+        </div>
+      </div>
+      <input type="range" class="form-range" min="0" max="100" value="50" id="slider2b">
+      <p class="text-center text-muted">⬅️ Slide to compare ➡️</p>
+    </div>
+
+    <!-- Work 3 -->
+    <div class="col-md-6">
+      <h5 class="text-center mb-2">Drawer Fixing</h5>
+      <div class="compare-wrapper position-relative overflow-hidden rounded shadow" style="height: 400px;">
+        <img src="images/a.jpg" class="img-fluid h-100 w-100 object-fit-cover" alt="Before Work 3">
+        <div class="compare-after position-absolute top-0 start-0 h-100" id="after2c" style="width: 50%;">
+          <img src="images/be.jpg" class="img-fluid h-100 w-100 object-fit-cover" alt="After Work 3">
+        </div>
+      </div>
+      <input type="range" class="form-range" min="0" max="100" value="50" id="slider2c">
+      <p class="text-center text-muted">⬅️ Slide to compare ➡️</p>
+    </div>
+
+    <!-- Work 4 -->
+    <div class="col-md-6">
+      <h5 class="text-center mb-2">Shelf Installation</h5>
+      <div class="compare-wrapper position-relative overflow-hidden rounded shadow" style="height: 400px;">
+        <img src="images/a.jpg" class="img-fluid h-100 w-100 object-fit-cover" alt="Before Work 4">
+        <div class="compare-after position-absolute top-0 start-0 h-100" id="after2d" style="width: 50%;">
+          <img src="images/be.jpg" class="img-fluid h-100 w-100 object-fit-cover" alt="After Work 4">
+        </div>
+      </div>
+      <input type="range" class="form-range" min="0" max="100" value="50" id="slider2d">
+      <p class="text-center text-muted">⬅️ Slide to compare ➡️</p>
+    </div>
+  </div>
+</div>
+
+    <!-- Add more sections following same pattern -->
+
+  </div>
+</div>
+
+
+
+
+<script>
+  function setSlider(sliderId, afterId) {
+    const slider = document.getElementById(sliderId);
+    const after = document.getElementById(afterId);
+    slider.addEventListener('input', function () {
+      after.style.width = `${slider.value}%`;
+    });
+  }
+
+  setSlider('slider1', 'after1');
+  setSlider('slider2', 'after2');
+  setSlider('slider2a', 'after2a');
+setSlider('slider2b', 'after2b');
+setSlider('slider2c', 'after2c');
+setSlider('slider2d', 'after2d');
+
+
+  function showService(service) {
+    const allSections = document.querySelectorAll('.service-result');
+    allSections.forEach(section => section.classList.add('d-none'));
+
+    const selected = document.querySelector(`.${service}-section`);
+    if (selected) {
+      selected.classList.remove('d-none');
+      scrollToElement(selected);
+
+      // update auto-type
+      const autoTypeEl = selected.querySelector('.auto-type');
+      if (autoTypeEl) {
+        const text = autoTypeEl.getAttribute('data-text');
+        typeText(autoTypeEl, text);
+      }
+    }
+  }
+
+  function scrollToElement(el) {
+    el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  function typeText(el, text) {
+    el.textContent = '';
+    let i = 0;
+    const typing = setInterval(() => {
+      if (i < text.length) {
+        el.textContent += text[i];
+        i++;
+      } else {
+        clearInterval(typing);
+      }
+    }, 100);
+  }
+
+  // Initial auto-type on load
+  window.addEventListener('DOMContentLoaded', () => {
+    const el = document.querySelector('.auto-type');
+    if (el) {
+      typeText(el, el.getAttribute('data-text'));
+    }
+  });
+</script>
+<script>
+  function setSlider(sliderId, afterId) {
+    const slider = document.getElementById(sliderId);
+    const after = document.getElementById(afterId);
+    slider.addEventListener('input', function () {
+      after.style.width = `${slider.value}%`;
+    });
+  }
+
+  // Set all carpenter sliders
+  setSlider('slider2a', 'after2a');
+  setSlider('slider2b', 'after2b');
+  setSlider('slider2c', 'after2c');
+  setSlider('slider2d', 'after2d');
+</script>
+
+<script>
+  ['1a', '1b', '1c', '1d', '2a', '2b', '2c', '2d'].forEach(id => {
+    const slider = document.getElementById('slider' + id);
+    const after = document.getElementById('after' + id);
+    if (slider && after) {
+      slider.addEventListener('input', () => {
+        after.style.width = slider.value + '%';
+      });
+    }
+  });
+</script>
