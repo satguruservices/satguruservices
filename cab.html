@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Taxi Cab Services - Satguru Services</title>
+  <link rel="icon" href="images/New Logo.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body {
+      background-color: #f9f9f9;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .service-box {
+      background: #fff;
+      padding: 25px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.04);
+    }
+    .service-title {
+      font-weight: 600;
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: #0d6efd;
+    }
+    .service-description {
+      margin: 0;
+      color: #333;
+    }
+    .book-btn {
+      text-align: center;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container py-5">
+  <h2 class="text-center text-primary mb-5">Taxi Cab Services</h2>
+
+  <div class="service-box">
+    <p class="service-title">1. Airport Transfers</p>
+    <p class="service-description">Pickup and drop service to/from airports with punctuality, luggage support, and comfortable AC rides.</p>
+  </div>
+
+  <div class="service-box">
+    <p class="service-title">2. Local City Rides</p>
+    <p class="service-description">Hourly or point-to-point taxi bookings within the city for shopping, business visits, or errands.</p>
+  </div>
+
+  <div class="service-box">
+    <p class="service-title">3. Outstation Travel</p>
+    <p class="service-description">One-way or round-trip cab services to other cities or states with well-maintained vehicles and experienced drivers.</p>
+  </div>
+
+  <div class="service-box">
+    <p class="service-title">4. Wedding & Event Transport</p>
+    <p class="service-description">Special car rental services for wedding guests, family functions, or event pickup and drop.</p>
+  </div>
+
+  <div class="service-box">
+    <p class="service-title">5. Corporate Cab Services</p>
+    <p class="service-description">Daily or monthly cab bookings for offices and business travel with proper billing and professional chauffeurs.</p>
+  </div>
+
+  <div class="service-box">
+    <p class="service-title">6. Railway Station Transfers</p>
+    <p class="service-description">Reliable taxi service for timely railway station drops and pickups with location tracking.</p>
+  </div>
+
+  <div class="service-box">
+    <p class="service-title">7. Full Day Rentals</p>
+    <p class="service-description">Book cabs for a full day for sightseeing, touring, or business meetings with flexible stops.</p>
+  </div>
+
+  <!-- <div class="service-box">
+    <p class="service-title">8. Luxury Car Hire</p>
+    <p class="service-description">Premium cars like Innova, Dzire, Etios, and sedans for VIP or executive-level travel.</p>
+  </div>
+
+  <div class="service-box">
+    <p class="service-title">9. Women-Safe Cabs</p>
+    <p class="service-description">Cabs with safety measures, GPS tracking, verified drivers, and helpline support for women passengers.</p>
+  </div> -->
+
+  <!-- Book Now Button -->
+  <div class="book-btn">
+    <a href="index.html#contact" class="btn btn-primary btn-lg px-4">Book Now</a>
+  </div>
+</div>
+
+<footer class="footer bg-dark text-white pt-4 mt-5">
+  <div class="container text-center">
+    <p class="mb-2">© 2025 Satguru Services. All rights reserved.</p>
+    
+    <!-- Disclaimer -->
+    <p class="footer-disclaimer small">
+      Note: We collaborate with third-party taxi service providers. Satguru Services acts only as a booking facilitator and does not directly operate taxi services.
+    </p>
+
+    <div>
+      <a href="https://www.instagram.com/satguruservices/profilecard/?igsh=MXFuZHIwYWZ0ZDh1dg==" target="_blank"><i class="fab fa-instagram text-white me-3"></i></a>
+      <a href="https://wa.me/919908821112" target="_blank"><i class="fa-brands fa-whatsapp text text-white me-3"></i></a>
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+// Auto-select "Taxi Cab" as the service on page load
+document.addEventListener("DOMContentLoaded", function () {
+  const serviceSelect = document.getElementById("service");
+  if (serviceSelect) {
+    serviceSelect.value = "Taxi Cab";
+  }
+});
+</script>
+
+</body>
+</html>
